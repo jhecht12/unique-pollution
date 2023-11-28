@@ -1,2 +1,3 @@
-# unique-pollution
-Verilog code for a 8 bit Floating Point Adder
+# Floating Point Adder
+Verilog code for a 8 bit Floating Point Adder, implemented as a Finite State Machine.
+Uses an 8 bit floating point number representation with 1 sign bit, 4 exponent bits, and 3 mantissa bits. Sign bit indicates positive (0) or negative (1). Exponent indicates the power of the leading 1 in the binary representation (with 6 subtracted to allow for representation of smaller numbers). The mantissa bits represent the 4 bits following the leading 1 in the binary representation. Adder takes in two initial floating point numbers and adds them. The answer is normalized to fit the format of the 8 bit floating point number. After normalization, the sum of the inputs is output. Also included is code for a four digit seven segment display, which is used to show the input and output of the adder when loaded onto an FPGA, where switches can be used to input the two addends.
