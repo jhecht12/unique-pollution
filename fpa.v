@@ -1,23 +1,10 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 05/07/2023 05:24:02 PM
-// Design Name: 
-// Module Name: lab_12
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+
+// Finite state machine implementation of 8 bit floating point adder
+// FPApath controls the data path and performs addition on the loaded values
+// FPActrl maintains the state of the machine.
+// Numbers are initially loaded in, then added and normalized
+// After normalization, sum is output
 
 module FPApath(input clk, input [1:0] state, input [7:0] a, input [7:0] b, output reg [7:0] sum, output reg norm);
     reg sign_gt,sign_ls,sign_ans;
