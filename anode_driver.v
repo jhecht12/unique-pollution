@@ -1,24 +1,7 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03/26/2023 04:47:06 PM
-// Design Name: 
-// Module Name: anode_driver
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
+// Anode driver is used to select which part of seven segment display will be illuminated.
+// Anode is incremented on clock enable. Anode is changed at rate fast enough that outputs appear to be display simultaneously.
 
 module anode_driver(
  input wire clk_en,
